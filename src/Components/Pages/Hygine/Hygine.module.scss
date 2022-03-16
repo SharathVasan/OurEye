@@ -1,0 +1,82 @@
+.mainholder {
+  width: 80vw;
+  height: 92vh;
+  background: #ececec;
+  overflow-y: scroll;
+}
+
+.todaybutton {
+  position: absolute;
+  right: 3vw;
+  top: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 5px;
+  height: fit-content;
+  width: 100px;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+}
+
+.maingraphholder {
+  height: 80vh;
+  padding: 40px;
+  width: 76vw;
+  background-color: white;
+  margin: 50px 0px 0px 2vw;
+  border-radius: 10px;
+  gap: 80px;
+}
+
+.topbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.mainheading {
+  font-size: 34px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.innercontainer {
+  padding: 30px;
+}
+
+.subhead {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #c5c5c5;
+  padding-top: 15px;
+}
+
+.mainheading {
+  font-size: 34px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.bluetext {
+  font-size: 18px;
+  color: #2e75fe;
+  padding-top: 5px;
+}
+
+.greytext {
+  font-size: 18px;
+  padding-top: 5px;
+  color: #c5c5c5;
+}
+
+.graphholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}

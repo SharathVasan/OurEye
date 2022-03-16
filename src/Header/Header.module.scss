@@ -1,0 +1,14 @@
+.maintop {
+  width: 80vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+}
+
+.icons:hover {
+  cursor: pointer;
+  transform: scale(1.04);
+}

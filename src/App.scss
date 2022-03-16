@@ -1,0 +1,157 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+$sidebar-bg-color: #3a3a3a;
+$submenu-bg-color: #3a3a3a;
+$submenu-bg-color-collapsed: #3a3a3a;
+$sidebar-color: #b3b8d4;
+$highlight-color: #dee2ec;
+$icon-bg-color: rgba(255, 255, 255, 0.05);
+$icon-size: 35px;
+
+@import "~react-pro-sidebar/dist/scss/styles.scss";
+
+.btn-toggle {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background: #3a3a3a;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  display: none;
+}
+
+.sidebar-btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .sidebar-btn {
+    transition: width 0.3s;
+    width: 100px;
+    padding: 1px 15px;
+    border-radius: 40px;
+    background: #3a3a3a;
+    color: #adadad;
+    text-decoration: none;
+    margin: 0 auto;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    span {
+      margin-left: 5px;
+      font-size: 13px;
+    }
+  }
+}
+
+.pro-sidebar-content {
+  width: 100%;
+}
+
+.pro-sidebar {
+  min-width: 15vw;
+}
+
+.collapsed {
+  .sidebar-btn {
+    display: inline-block;
+    line-height: 40px;
+    padding: 0;
+  }
+}
+
+main {
+  padding: 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  header {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #efefef;
+    h1 {
+      display: flex;
+      align-items: center;
+      transform: translateX(-20px);
+    }
+  }
+
+  footer {
+    margin-top: auto;
+    color: #888;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: #888;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.social-bagdes {
+  margin-top: 10px;
+  img {
+    margin: 5px;
+  }
+}
+
+.block {
+  display: flex;
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: #545454;
+  > span {
+    margin-left: 10px;
+  }
+}
+
+// @media (max-width: 767.98px) {
+//   overflow-x: hidden;
+//   header {
+//     h1 {
+//       font-size: 24px;
+//     }
+//   }
+// }
+@media (max-width: $breakpoint-md) {
+  .btn-toggle {
+    display: flex;
+  }
+
+  &.rtl {
+    .btn-toggle {
+      margin-left: auto;
+    }
+  }
+}
+
+.badge {
+  padding: 3px 6px;
+  font-size: 9px;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  &.red {
+    color: #ffffff;
+    background: #d63030;
+  }
+  &.gray {
+    color: #ffffff;
+    background: #777777;
+  }
+  &.yellow {
+    color: #000000;
+    background: #ffd331;
+  }
+}
