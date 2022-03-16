@@ -1,0 +1,26 @@
+.sideheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+  gap: 10px;
+}
+
+.logoimage {
+  height: auto;
+  width: 100px;
+}
+
+.menucontent {
+  padding-left: 20px;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-start;
+  text-align: top;
+}
+
+.icons {
+  margin-top: 20px;
+}
